@@ -2,6 +2,11 @@
 
 Was borded of using online tools that aren't great
 
+# Install
+```bash
+cargo install gwordle
+```
+
 # Word List
 
 Thanks to https://github.com/tabatkins/wordle-list for the word list

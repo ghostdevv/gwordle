@@ -1,9 +1,13 @@
 [package]
-name = "wordle-guesser"
+name = "gwordle"
+description = "Solve worlde"
 version = "0.1.0"
 edition = "2021"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+license = "MIT"
+authors = ["GHOST <ghostdevbusiness@gmail.com> (https://ghostdev.xyz)"]
+keywords = ["gwordle", "wordle", "wordle solver"]
+readme = "README.md"
+repository = "https://github.com/ghostdevv/gwordle/"
 
 [dependencies]
 clap = { version = "3.1.18", features = ["derive"] }

@@ -1,5 +1,4 @@
 use clap::Parser;
-use std::fs;
 
 #[derive(Parser, Debug)]
 #[clap(version, about)]
@@ -18,7 +17,7 @@ struct Args {
 fn main() {
     let args = Args::parse();
 
-    let word_list = fs::read_to_string("words.txt").expect("Failed to read words");
+    let word_list = include_str!("words.txt");
     let words: Vec<&str> = word_list.split("\n").collect();
 
     let regex = regex::Regex::new(&args.matcher).unwrap();

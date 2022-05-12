@@ -4,7 +4,7 @@ use std::fs;
 #[derive(Parser, Debug)]
 #[clap(version, about)]
 struct Args {
-    #[clap(short, long)]
+    #[clap(short, long, default_value=".....")]
     matcher: String,
 
     #[clap(short, long, default_value = "")]
